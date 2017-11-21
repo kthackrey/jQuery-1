@@ -5,6 +5,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+  <style>
+  .highlight{
+    background-color: yellow;
+  }
+  </style>
   <script>
   function getHeadline(){
     console.log($('h1').text());
@@ -30,6 +35,12 @@
   function undo(){
     $('h2').show();
     $('h3').show();
+  }
+  function highlightByline(){
+    $('.byline').addClass('highlight');
+  }
+  function unHighlightByline(){
+    $('.byline').removeClass('highlight')
   }
   </script>
   <h1>Lorem ipsum</h1>
